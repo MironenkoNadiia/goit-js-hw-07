@@ -3,16 +3,24 @@ const decrementBtn = document.querySelector('[data-action="decrement"]');
 const spanEl = document.querySelector('#value');
 let counterValue = 0;
 
-incrementBtn.addEventListener("click", (counterValue) => {
-    ++spanEl.textContent;
+// incrementBtn.addEventListener("click", (counterValue) => {
+//     ++spanEl.textContent;
     
-});
+// });
 
-decrementBtn.addEventListener("click", (counterValue) => {
-    --spanEl.textContent;
-});
+// decrementBtn.addEventListener("click", (counterValue) => {
+//     --spanEl.textContent;
+// });
 
+incrementBtn.addEventListener("click", (increment));
+function increment(counterValue) {
+     ++spanEl.textContent;
+}
 
+decrementBtn.addEventListener("click", (decrement));
+function decrement(counterValue) {
+  --spanEl.textContent;
+}
 
 
 
