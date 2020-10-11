@@ -11,11 +11,14 @@ const ingredients = [
 
 const ingredientsEl = document.querySelector('#ingredients');
 ingredients.forEach((ingredient) => {
-  let item = document.createElement("li");
-    item.textContent = ingredient;
-    console.log(item);
+  const item = document.createElement("li");
+  console.log(item);
+  item.append(ingredient);
+
+  ingredientsEl.append(item);
  });
-ingredientsEl.append(...ingredients);
+  
+
 
 
 // const potatoEl = document.createElement('li');
