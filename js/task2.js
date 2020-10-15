@@ -10,15 +10,15 @@ const ingredients = [
 
 
 const ingredientsEl = document.querySelector('#ingredients');
-ingredients.forEach((ingredient) => {
+const ingredientsList = ingredients.map((ingredient) => {
   const item = document.createElement("li");
   console.log(item);
-  item.append(ingredient);
-
-  ingredientsEl.append(item);
+  item.textContent = `${ingredient}`
+  return item;
+  // ingredientsEl.append(item);
  });
   
-
+ingredientsEl.append(...ingredientsList);
 
 
 // const potatoEl = document.createElement('li');
